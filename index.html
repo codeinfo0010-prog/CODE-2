@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Au - A = u</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Boas-vindas -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>C</h1>
+            <p>A</p>
+            <button class="btn-start" onclick="startQuiz()">Começar</button>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div class="quiz-screen" id="quizScreen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="question-counter" id="questionCounter">1 de 5</div>
+            <div class="question" id="questionText"></div>
+            <div class="answers-container" id="answersContainer"></div>
+        </div>
+
+        <!-- Tela de Senha -->
+        <div class="password-screen" id="passwordScreen">
+            <h2>🔒 Pergunta Secreta</h2>
+            <p>Digite a senha para desbloquear a última pergunta</p>
+            
+            <!-- DICA DA SENHA -->
+            <div class="password-hint" id="passwordHint">Carregando dica...</div>
+            
+            <input type="password" class="password-input" id="passwordInput" placeholder="Digite aqui...">
+            <br>
+            <button class="btn-password" onclick="checkPassword()">Desbloquear</button>
+            <p class="error-message" id="errorMessage">Senha incorreta! Tente novamente.</p>
+        </div>
+
+        <!-- Tela de Resultado -->
+        <div class="result-screen" id="resultScreen">
+            <h2>Quiz Finalizado!</h2>
+            <div class="score" id="scoreDisplay">🎉</div>
+            <div class="message" id="resultMessage"></div>
+            <button class="btn-restart" onclick="restartQuiz()">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
