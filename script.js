@@ -32,8 +32,8 @@ const question4 = {
 const question5 = {
     type: 'yesno',
     text: "Você gosta de mim?",
-    password: "secreto123",
-    hint: "Dica: É algo que fiz para você", // DICA DA SENHA
+    password: "ZZUJ",
+    hint: "Dica: É algo que fiz para você (escreva em letra maiuscula)", // DICA DA SENHA
     successMessage: "DQXE GUH YZI OBDVNSIEHBL QL NXR YOLXDOYPL XHRMSIE XÓ ZHWBA RWP DHRJYYPP CRE UEJÊ ZÁ XSKE... XKZ UV FÃX ?" // MENSAGEM FINAL
 };
 
